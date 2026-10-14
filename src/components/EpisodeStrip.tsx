@@ -23,8 +23,8 @@ export function EpisodeStrip({ items }: Props) {
     <div id="episodes" className="col-span-full scroll-mt-24 py-6">
       <div className="mb-5 flex items-end justify-between">
         <div>
-          <h3 className="font-serif text-[24px] font-semibold tracking-tight">Shop by Episode</h3>
-          <div className="mt-1 text-[13px] text-muted">Every reel, its own drop</div>
+          <h3 className="font-serif text-[24px] font-semibold tracking-tight"> Fresh on the Feed </h3>
+          <div className="mt-1 text-[13px] text-muted">Every reel, Fresh vibes</div>
         </div>
         <div className="flex gap-2">
           <button

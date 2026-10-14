@@ -30,7 +30,7 @@ export function ProductCard({ product }: Props) {
           />
         ) : null}
 
-        {product.discount ? (
+        {product.discount && !product.oldPrice ? (
           <span className="absolute left-3 top-3 z-10 rounded-md bg-accent px-2.5 py-1 text-[11px] font-bold tracking-wide text-white">
             -{product.discount}%
           </span>
@@ -46,14 +46,21 @@ export function ProductCard({ product }: Props) {
       </div>
 
       <div className="pt-3.5">
-        <h3 className="mb-1.5 line-clamp-2 text-sm font-medium leading-snug text-ink">
+        <h3 className="mb-1.5 line-clamp-2 font-sans text-sm font-semibold leading-snug tracking-[-0.01em] text-ink">
           {product.title}
         </h3>
-        <div className="flex items-baseline gap-2 text-sm">
-          <span className="font-semibold">₹{product.price.toLocaleString("en-IN")}</span>
+        <div className="flex items-baseline gap-2 font-sans">
+          <span className="text-[15px] font-bold tracking-tight text-ink">
+            ₹{product.price.toLocaleString("en-IN")}
+          </span>
           {product.oldPrice ? (
-            <span className="text-[13px] font-normal text-muted line-through">
+            <span className="text-[12px] font-medium text-muted line-through decoration-muted/70">
               ₹{product.oldPrice.toLocaleString("en-IN")}
+            </span>
+          ) : null}
+          {product.discount && product.oldPrice ? (
+            <span className="text-[11px] font-bold tracking-wide text-accent">
+              {product.discount}% OFF
             </span>
           ) : null}
         </div>

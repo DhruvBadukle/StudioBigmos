@@ -74,15 +74,15 @@ export function TrendingCarousel({ items }: Props) {
                   ) : null}
 
                   <div className="absolute inset-x-0 bottom-0 p-5 text-white">
-                    <h4 className="font-serif text-2xl font-semibold leading-tight">
+                    <h4 className="font-sans text-2xl font-semibold leading-tight tracking-tight">
                       {product.title}
                     </h4>
-                    <div className="mt-2 flex items-baseline gap-2 text-sm">
-                      <span className="font-semibold">
+                    <div className="mt-2 flex items-baseline gap-2 font-sans">
+                      <span className="text-base font-bold tracking-tight">
                         ₹{product.price.toLocaleString("en-IN")}
                       </span>
                       {product.oldPrice ? (
-                        <span className="text-white/70 line-through">
+                        <span className="text-[13px] font-medium text-white/70 line-through decoration-white/50">
                           ₹{product.oldPrice.toLocaleString("en-IN")}
                         </span>
                       ) : null}

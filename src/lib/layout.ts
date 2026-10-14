@@ -31,7 +31,7 @@ export function buildBlocks(products: Product[], visibleCount: number): Block[] 
       : undefined;
     blocks.push({
       kind: "label",
-      text: `From Episode ${featuredEpisode}`,
+      text: `New Arrivals ${featuredEpisode}`,
       ...(episodeTitle ? { sub: episodeTitle } : {}),
     });
     blocks.push({ kind: "products", items: featuredProducts });

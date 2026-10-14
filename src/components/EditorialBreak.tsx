@@ -70,7 +70,7 @@ export function EditorialBreak({
       </div>
 
       <h4 id="lookbook-items" className="mb-5 mt-8 scroll-mt-24 font-serif text-2xl font-semibold">
-        Shop the look
+        The Hot List
       </h4>
       {sortedItems.length > 0 ? (
         <div

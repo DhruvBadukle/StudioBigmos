@@ -5,7 +5,7 @@ export function Footer() {
         <div className="font-serif text-[22px] font-semibold tracking-tight text-ink">
           Avikas Studio<span className="text-accent">.</span>
         </div>
-        <p>© 2026 Avikas Studio · Made with care in India 🇮🇳</p>
+        <p>© 2026 Avikas Studio · Made in India</p>
       </div>
     </footer>
   );

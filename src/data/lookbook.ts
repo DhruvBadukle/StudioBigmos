@@ -1,9 +1,9 @@
 export const LOOKBOOK = {
-  badge: "Lookbook · Winter Edit",
+  badge: "NEW IN",
   eyebrow: "Curated Edit",
-  title: "Viscose Blend Embroidered",
-  body: "Explore the pieces in this winter edit and shop each product below.",
+  title: "Rayon Printed Anarkali Kurta and Pant with Dupatta Set",
+  body: "Discover this elegant ethnic set and shop the complete look below.",
   cta: "Explore Lookbook",
-  image: "/products/avika22-md.webp",
-  link: "https://link.amazon/B08xGZQe0",
+  image: "/products/avika10-md.webp",
+  link: "https://link.amazon/B0eeLlHqJ",
 };

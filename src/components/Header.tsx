@@ -11,7 +11,7 @@ export function Header({ searchQuery, onSearchChange, onNavigate }: HeaderProps)
   const navigation = [
     { label: "Episodes", target: "episodes" },
     { label: "Shop", target: "shop" },
-    { label: "Collections", target: "collections" },
+    { label: "Collections", target: "lookbook-items" },
     { label: "Sale", target: "sale" },
   ];
 
@@ -29,7 +29,7 @@ export function Header({ searchQuery, onSearchChange, onNavigate }: HeaderProps)
           Avikas Studio<span className="text-accent">.</span>
         </a>
 
-        <nav className="hidden gap-7 md:flex">
+        <nav className="hidden items-center gap-1 md:flex">
           {navigation.map(({ label, target }) => {
             const isActive = activeSection === target;
 
@@ -43,10 +43,10 @@ export function Header({ searchQuery, onSearchChange, onNavigate }: HeaderProps)
                   onNavigate(target);
                 }}
                 aria-current={isActive ? "location" : undefined}
-                className={`border-b-2 pb-0.5 text-sm font-medium transition-colors ${
+                className={`rounded-full px-2.5 py-1.5 text-[13px] font-semibold tracking-wide transition-colors ${
                   isActive
-                    ? "border-accent text-ink"
-                    : "border-transparent opacity-80 hover:opacity-100"
+                    ? "bg-white text-accent shadow-sm"
+                    : "text-muted hover:bg-white/70 hover:text-ink"
                 }`}
               >
                 {label}
@@ -63,7 +63,7 @@ export function Header({ searchQuery, onSearchChange, onNavigate }: HeaderProps)
           <input
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Search episode no. (try 24)"
+            placeholder="Search EP (e.g. 24)"
             className="w-full border-0 bg-transparent text-sm outline-none placeholder:text-[#A0A0A0]"
           />
           {searchQuery && (
@@ -88,7 +88,7 @@ export function Header({ searchQuery, onSearchChange, onNavigate }: HeaderProps)
           <input
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Search episode no. (try 24)"
+            placeholder="Search EP (e.g. 24)"
             className="w-full border-0 bg-transparent text-sm outline-none"
           />
         </div>

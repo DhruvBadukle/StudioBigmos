@@ -4,6 +4,8 @@
       "id": "coat",
       "title": "Pure Cotton Kurti Suit for Women",
       "price": 835,
+      "oldPrice": 1090,
+      "discount": 23,
       "image": "/products/avika1-md.webp",
       "link": "https://link.amazon/B00UAO8tB",
       "episode": 0
@@ -12,6 +14,8 @@
       "id": "knit",
       "title": "Viscose Blend Embroidered",
       "price": 739,
+      "oldPrice": 990,
+      "discount": 25,
       "image": "/products/avika2-md.webp",
       "link": "https://link.amazon/B08xGZQe0",
       "episode": 0
@@ -20,6 +24,8 @@
       "id": "skirt",
       "title": "Women’s Cotton Printed Kurta Set with Pants & Dupatta ",
       "price": 928,
+      "oldPrice": 1290,
+      "discount": 28,
       "image": "/products/avika3-md.webp",
       "link": "https://link.amazon/B05CzbE6c",
       "episode": 0
@@ -28,6 +34,8 @@
       "id": "jacket",
       "title": "Kurta Set with Palazzo Pants & Dupatta",
       "price": 859,
+      "oldPrice": 2999,
+      "discount": 71,
       "image": "/products/avika4-md.webp",
       "link": "https://link.amazon/B05SJnNz5",
       "episode": 0
@@ -36,39 +44,39 @@
   "trending": [
     {
       "id": "trending-coat",
-      "title": "Amayra Women's Pure Cotton",
-      "price": 835,
-      "oldPrice": 1090,
-      "discount": 23,
-      "image": "/products/avika1-md.webp",
-      "link": "https://link.amazon/B00UAO8tB"
+      "title": "GoSriKi Kurta Set Women Viscose Printed",
+      "price": 579,
+      "oldPrice": 2599,
+      "discount": 78,
+      "image": "/products/avika6-md.webp",
+      "link": "https://link.amazon/B08clM29a"
     },
     {
       "id": "trending-knit",
-      "title": "Viscose Blend Embroidered",
-      "price": 739,
-      "oldPrice": 990,
-      "discount": 25,
-      "image": "/products/avika2-md.webp",
-      "link": "https://link.amazon/B08xGZQe0"
+      "title": "Klosia Women Embroidery Solid",
+      "price": 679,
+      "oldPrice": 2999,
+      "discount": 77,
+      "image": "/products/avika7-md.webp",
+      "link": "https://link.amazon/B0gj7q6I6"
     },
     {
       "id": "trending-skirt",
-      "title": "Women’s Cotton Printed Kurta Set with Pants & Dupatta ",
-      "price": 928,
-      "oldPrice": 1290,
-      "discount": 28,
-      "image": "/products/avika3-md.webp",
-      "link": "https://link.amazon/B05CzbE6c"
+      "title": "Floral Printed Straight Kurta Set",
+      "price": 549,
+      "oldPrice": 2999,
+      "discount": 82,
+      "image": "/products/avika8-md.webp",
+      "link": "https://link.amazon/B02GvO06n"
     },
     {
       "id": "trending-jacket",
-      "title": "Kurta Set with Palazzo Pants & Dupatta",
-      "price": 859,
+      "title": "KLOSIA Women's Printed Straight Kurta",
+      "price": 539,
       "oldPrice": 2999,
-      "discount": 19,
-      "image": "/products/avika4-md.webp",
-      "link": "https://link.amazon/B05SJnNz5"
+      "discount": 82,
+      "image": "/products/avika9-md.webp",
+      "link": "https://link.amazon/B0eGbX975"
     }
   ],
   "lookbook": [
@@ -97,7 +105,7 @@
       "title": "Amayra Women's Pure Cotton Kurti Suit Set for Women",
       "price": 928,
       "oldPrice": 3590,
-      "discount": 19,
+      "discount": 74,
       "image": "/products/avika3-md.webp",
       "link": "https://link.amazon/B05CzbE6c",
       "episode": 1
@@ -107,7 +115,7 @@
       "title": "Kurta Set with Palazzo Pants & Dupatta",
       "price": 859,
       "oldPrice": 3590,
-      "discount": 19,
+      "discount": 76,
       "image": "/products/avika4-md.webp",
       "link": "https://link.amazon/B05SJnNz5",
       "episode": 1
