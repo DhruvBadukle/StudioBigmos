@@ -23,8 +23,10 @@ npm run preview
 
 JPEG images in `public/products` are converted to a WebP variant up to
 1200×1600 (preserving each image's aspect ratio) before `npm run dev` and
-`npm run build`. The original images remain in place as a fallback, and
-generated WebP files are not committed.
+`npm run build`. Product data references the generated WebP files directly, so
+commit the referenced `*-md.webp` files (or commit the source JPEGs and ensure
+the optimization script can generate them) so they are available after a Git
+sync.
 To regenerate them manually, run:
 
 ```bash
