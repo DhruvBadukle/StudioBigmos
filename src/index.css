@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #fafaf8;
+  --color-ink: #111111;
+  --color-muted: #777772;
+  --color-line: #e8e7e3;
+  --color-accent: #a65b45;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Fraunces", Georgia, serif;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-fade-up {
+  animation: fade-up 500ms ease-out both;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  scrollbar-color: #b7b3ab #f1f0ed;
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f0ed;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 2px solid #f1f0ed;
+  border-radius: 999px;
+  background: #b7b3ab;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #8d8880;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: #FAFAF8;
+  color: #111111;
+  -webkit-font-smoothing: antialiased;
+}

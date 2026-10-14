@@ -1,0 +1,156 @@
+{
+  "products": [
+    {
+      "id": "coat",
+      "title": "Oversized Wool Coat",
+      "price": 4290,
+      "image": "/products/avika1-md.webp",
+      "link": "https://www.myntra.com/search?q=oversized%20wool%20coat",
+      "episode": 0
+    },
+    {
+      "id": "knit",
+      "title": "Ribbed Turtleneck",
+      "price": 1490,
+      "image": "/products/avika2-md.webp",
+      "link": "https://www.myntra.com/search?q=ribbed%20turtleneck",
+      "episode": 0
+    },
+    {
+      "id": "skirt",
+      "title": "Pleated Midi Skirt",
+      "price": 2190,
+      "image": "/products/avika3-md.webp",
+      "link": "https://www.myntra.com/search?q=pleated%20midi%20skirt",
+      "episode": 0
+    },
+    {
+      "id": "jacket",
+      "title": "Cropped Denim Jacket",
+      "price": 2890,
+      "image": "/products/avika4-md.webp",
+      "link": "https://www.myntra.com/search?q=cropped%20denim%20jacket",
+      "episode": 0
+    }
+  ],
+  "trending": [
+    {
+      "id": "trending-coat",
+      "title": "Trending Wool Coat",
+      "price": 4290,
+      "oldPrice": 5290,
+      "discount": 19,
+      "image": "/products/avika1-md.webp",
+      "link": "https://www.myntra.com/search?q=trending%20wool%20coat"
+    },
+    {
+      "id": "trending-knit",
+      "title": "Trending Ribbed Knit",
+      "price": 1490,
+      "oldPrice": 1990,
+      "discount": 25,
+      "image": "/products/avika2-md.webp",
+      "link": "https://www.myntra.com/search?q=trending%20ribbed%20knit"
+    },
+    {
+      "id": "trending-skirt",
+      "title": "Trending Pleated Skirt",
+      "price": 2190,
+      "oldPrice": 2790,
+      "discount": 21,
+      "image": "/products/avika3-md.webp",
+      "link": "https://www.myntra.com/search?q=trending%20pleated%20skirt"
+    },
+    {
+      "id": "trending-jacket",
+      "title": "Trending Denim Jacket",
+      "price": 2890,
+      "oldPrice": 3590,
+      "discount": 19,
+      "image": "/products/avika4-md.webp",
+      "link": "https://www.myntra.com/search?q=trending%20denim%20jacket"
+    }
+  ],
+  "lookbook": [
+    {
+      "id": "lookbook-coat",
+      "title": "Lookbook Wool Coat",
+      "price": 4290,
+      "oldPrice": 5290,
+      "discount": 19,
+      "image": "/products/avika1-md.webp",
+      "link": "https://www.myntra.com/search?q=lookbook%20wool%20coat",
+      "episode": 1
+    },
+    {
+      "id": "lookbook-knit",
+      "title": "Lookbook Soft Knit",
+      "price": 1490,
+      "oldPrice": 1990,
+      "discount": 25,
+      "image": "/products/avika2-md.webp",
+      "link": "https://www.myntra.com/search?q=lookbook%20soft%20knit",
+      "episode": 1
+    },
+    {
+      "id": "lookbook-jacket",
+      "title": "Lookbook Denim Jacket",
+      "price": 2890,
+      "oldPrice": 3590,
+      "discount": 19,
+      "image": "/products/avika3-md.webp",
+      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
+      "episode": 1
+    },
+    {
+      "id": "lookbook-jacket",
+      "title": "Lookbook Jacket",
+      "price": 2890,
+      "oldPrice": 3590,
+      "discount": 19,
+      "image": "/products/avika4-md.webp",
+      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
+      "episode": 1
+    },
+    {
+      "id": "lookbook-jacket",
+      "title": "Lookbook Denim Jacket",
+      "price": 2890,
+      "oldPrice": 3590,
+      "discount": 19,
+      "image": "/products/avika3-md.webp",
+      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
+      "episode": 2
+    },
+    {
+      "id": "lookbook-jacket",
+      "title": "Lookbook Jacket",
+      "price": 2890,
+      "oldPrice": 3590,
+      "discount": 19,
+      "image": "/products/avika4-md.webp",
+      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
+      "episode": 2
+    },
+    {
+      "id": "lookbook-jacket",
+      "title": "Lookbook Denim Jacket",
+      "price": 2890,
+      "oldPrice": 3590,
+      "discount": 19,
+      "image": "/products/avika3-md.webp",
+      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
+      "episode": 3
+    },
+    {
+      "id": "lookbook-jacket",
+      "title": "Lookbook Jacket",
+      "price": 2890,
+      "oldPrice": 3590,
+      "discount": 19,
+      "image": "/products/avika4-md.webp",
+      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
+      "episode": 3
+    }
+  ]
+}
