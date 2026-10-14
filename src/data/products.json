@@ -2,155 +2,115 @@
   "products": [
     {
       "id": "coat",
-      "title": "Oversized Wool Coat",
-      "price": 4290,
+      "title": "Pure Cotton Kurti Suit for Women",
+      "price": 835,
       "image": "/products/avika1-md.webp",
-      "link": "https://www.myntra.com/search?q=oversized%20wool%20coat",
+      "link": "https://link.amazon/B00UAO8tB",
       "episode": 0
     },
     {
       "id": "knit",
-      "title": "Ribbed Turtleneck",
-      "price": 1490,
+      "title": "Viscose Blend Embroidered",
+      "price": 739,
       "image": "/products/avika2-md.webp",
-      "link": "https://www.myntra.com/search?q=ribbed%20turtleneck",
+      "link": "https://link.amazon/B08xGZQe0",
       "episode": 0
     },
     {
       "id": "skirt",
-      "title": "Pleated Midi Skirt",
-      "price": 2190,
+      "title": "Women’s Cotton Printed Kurta Set with Pants & Dupatta ",
+      "price": 928,
       "image": "/products/avika3-md.webp",
-      "link": "https://www.myntra.com/search?q=pleated%20midi%20skirt",
+      "link": "https://link.amazon/B05CzbE6c",
       "episode": 0
     },
     {
       "id": "jacket",
-      "title": "Cropped Denim Jacket",
-      "price": 2890,
+      "title": "Kurta Set with Palazzo Pants & Dupatta",
+      "price": 859,
       "image": "/products/avika4-md.webp",
-      "link": "https://www.myntra.com/search?q=cropped%20denim%20jacket",
+      "link": "https://link.amazon/B05SJnNz5",
       "episode": 0
     }
   ],
   "trending": [
     {
       "id": "trending-coat",
-      "title": "Trending Wool Coat",
-      "price": 4290,
-      "oldPrice": 5290,
-      "discount": 19,
+      "title": "Amayra Women's Pure Cotton",
+      "price": 835,
+      "oldPrice": 1090,
+      "discount": 23,
       "image": "/products/avika1-md.webp",
-      "link": "https://www.myntra.com/search?q=trending%20wool%20coat"
+      "link": "https://link.amazon/B00UAO8tB"
     },
     {
       "id": "trending-knit",
-      "title": "Trending Ribbed Knit",
-      "price": 1490,
-      "oldPrice": 1990,
+      "title": "Viscose Blend Embroidered",
+      "price": 739,
+      "oldPrice": 990,
       "discount": 25,
       "image": "/products/avika2-md.webp",
-      "link": "https://www.myntra.com/search?q=trending%20ribbed%20knit"
+      "link": "https://link.amazon/B08xGZQe0"
     },
     {
       "id": "trending-skirt",
-      "title": "Trending Pleated Skirt",
-      "price": 2190,
-      "oldPrice": 2790,
-      "discount": 21,
+      "title": "Women’s Cotton Printed Kurta Set with Pants & Dupatta ",
+      "price": 928,
+      "oldPrice": 1290,
+      "discount": 28,
       "image": "/products/avika3-md.webp",
-      "link": "https://www.myntra.com/search?q=trending%20pleated%20skirt"
+      "link": "https://link.amazon/B05CzbE6c"
     },
     {
       "id": "trending-jacket",
-      "title": "Trending Denim Jacket",
-      "price": 2890,
-      "oldPrice": 3590,
+      "title": "Kurta Set with Palazzo Pants & Dupatta",
+      "price": 859,
+      "oldPrice": 2999,
       "discount": 19,
       "image": "/products/avika4-md.webp",
-      "link": "https://www.myntra.com/search?q=trending%20denim%20jacket"
+      "link": "https://link.amazon/B05SJnNz5"
     }
   ],
   "lookbook": [
     {
       "id": "lookbook-coat",
-      "title": "Lookbook Wool Coat",
-      "price": 4290,
-      "oldPrice": 5290,
-      "discount": 19,
+      "title": "Pure Cotton Kurti Suit for Women",
+      "price": 835,
+      "oldPrice": 1090,
+      "discount": 23,
       "image": "/products/avika1-md.webp",
-      "link": "https://www.myntra.com/search?q=lookbook%20wool%20coat",
+      "link": "https://link.amazon/B00UAO8tB",
       "episode": 1
     },
     {
       "id": "lookbook-knit",
-      "title": "Lookbook Soft Knit",
-      "price": 1490,
-      "oldPrice": 1990,
+      "title": "Viscose Blend Embroidered",
+      "price": 739,
+      "oldPrice": 990,
       "discount": 25,
       "image": "/products/avika2-md.webp",
-      "link": "https://www.myntra.com/search?q=lookbook%20soft%20knit",
+      "link": "https://link.amazon/B08xGZQe0",
       "episode": 1
     },
     {
       "id": "lookbook-jacket",
-      "title": "Lookbook Denim Jacket",
-      "price": 2890,
+      "title": "Amayra Women's Pure Cotton Kurti Suit Set for Women",
+      "price": 928,
       "oldPrice": 3590,
       "discount": 19,
       "image": "/products/avika3-md.webp",
-      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
+      "link": "https://link.amazon/B05CzbE6c",
       "episode": 1
     },
     {
       "id": "lookbook-jacket",
-      "title": "Lookbook Jacket",
-      "price": 2890,
+      "title": "Kurta Set with Palazzo Pants & Dupatta",
+      "price": 859,
       "oldPrice": 3590,
       "discount": 19,
       "image": "/products/avika4-md.webp",
-      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
+      "link": "https://link.amazon/B05SJnNz5",
       "episode": 1
-    },
-    {
-      "id": "lookbook-jacket",
-      "title": "Lookbook Denim Jacket",
-      "price": 2890,
-      "oldPrice": 3590,
-      "discount": 19,
-      "image": "/products/avika3-md.webp",
-      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
-      "episode": 2
-    },
-    {
-      "id": "lookbook-jacket",
-      "title": "Lookbook Jacket",
-      "price": 2890,
-      "oldPrice": 3590,
-      "discount": 19,
-      "image": "/products/avika4-md.webp",
-      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
-      "episode": 2
-    },
-    {
-      "id": "lookbook-jacket",
-      "title": "Lookbook Denim Jacket",
-      "price": 2890,
-      "oldPrice": 3590,
-      "discount": 19,
-      "image": "/products/avika3-md.webp",
-      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
-      "episode": 3
-    },
-    {
-      "id": "lookbook-jacket",
-      "title": "Lookbook Jacket",
-      "price": 2890,
-      "oldPrice": 3590,
-      "discount": 19,
-      "image": "/products/avika4-md.webp",
-      "link": "https://www.myntra.com/search?q=lookbook%20denim%20jacket",
-      "episode": 3
     }
   ]
 }
