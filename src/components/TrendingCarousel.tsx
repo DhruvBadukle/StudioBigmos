@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Heart } from "lucide-react";
 import { useState } from "react";
 import { EffectCards } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,9 +12,11 @@ import { OptimizedImage } from "./OptimizedImage";
 // Adapted from Skiper UI Carousel_002: https://skiper-ui.com/
 interface Props {
   items: Product[];
+  wishlistKeys: Set<string>;
+  onToggleWishlist: (product: Product) => void;
 }
 
-export function TrendingCarousel({ items }: Props) {
+export function TrendingCarousel({ items, wishlistKeys, onToggleWishlist }: Props) {
   const [swiper, setSwiper] = useState<SwiperInstance | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -48,11 +50,12 @@ export function TrendingCarousel({ items }: Props) {
           >
             {items.map((product, index) => (
               <SwiperSlide key={`${product.id}-${index}`} className="overflow-hidden rounded-3xl">
-                <a
-                  href={product.link}
-                  className="group relative block h-full w-full overflow-hidden rounded-3xl bg-[#dedbd5]"
-                  aria-label={`Shop ${product.title}`}
-                >
+                <div className="relative h-full w-full">
+                  <a
+                    href={product.link}
+                    className="group relative block h-full w-full overflow-hidden rounded-3xl bg-[#dedbd5]"
+                    aria-label={`Shop ${product.title}`}
+                  >
                   {product.image ? (
                     <OptimizedImage
                       src={product.image}
@@ -91,7 +94,27 @@ export function TrendingCarousel({ items }: Props) {
                       Shop this look
                     </span>
                   </div>
-                </a>
+                  </a>
+                  <button
+                    type="button"
+                    onClick={() => onToggleWishlist(product)}
+                    aria-label={`${wishlistKeys.has(`${product.id}::${product.link}`) ? "Remove from" : "Add to"} wishlist: ${product.title}`}
+                    aria-pressed={wishlistKeys.has(`${product.id}::${product.link}`)}
+                    className={`absolute left-4 top-16 z-10 grid h-10 w-10 place-items-center rounded-full shadow-sm transition-colors ${
+                      wishlistKeys.has(`${product.id}::${product.link}`)
+                        ? "bg-accent text-white"
+                        : "bg-white/95 text-ink hover:text-accent"
+                    }`}
+                  >
+                    <Heart
+                      key={wishlistKeys.has(`${product.id}::${product.link}`) ? "liked" : "unliked"}
+                      size={19}
+                      strokeWidth={1.8}
+                      fill={wishlistKeys.has(`${product.id}::${product.link}`) ? "currentColor" : "none"}
+                      className={wishlistKeys.has(`${product.id}::${product.link}`) ? "animate-heart-pop" : ""}
+                    />
+                  </button>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>

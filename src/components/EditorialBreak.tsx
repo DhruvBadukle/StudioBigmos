@@ -12,6 +12,8 @@ interface Props {
   items: Product[];
   image: string;
   link: string;
+  wishlistKeys: Set<string>;
+  onToggleWishlist: (product: Product) => void;
 }
 
 export function EditorialBreak({
@@ -23,6 +25,8 @@ export function EditorialBreak({
   items,
   image,
   link,
+  wishlistKeys,
+  onToggleWishlist,
 }: Props) {
   const sortedItems = [...items].sort((a, b) => {
     const aEpisode = parseEpisode(String(a.episode ?? ""));
@@ -77,7 +81,12 @@ export function EditorialBreak({
           className="grid grid-cols-2 gap-x-3.5 gap-y-7 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-5.5"
         >
           {sortedItems.map((product, index) => (
-            <ProductCard key={`${product.id}-${index}`} product={product} />
+            <ProductCard
+              key={`${product.id}-${index}`}
+              product={product}
+              isWishlisted={wishlistKeys.has(`${product.id}::${product.link}`)}
+              onToggleWishlist={onToggleWishlist}
+            />
           ))}
         </div>
       ) : (

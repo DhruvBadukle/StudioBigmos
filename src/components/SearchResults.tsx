@@ -6,9 +6,18 @@ interface Props {
   episode: number | null;
   results: Product[];
   onClear: () => void;
+  wishlistKeys: Set<string>;
+  onToggleWishlist: (product: Product) => void;
 }
 
-export function SearchResults({ query, episode, results, onClear }: Props) {
+export function SearchResults({
+  query,
+  episode,
+  results,
+  onClear,
+  wishlistKeys,
+  onToggleWishlist,
+}: Props) {
   return (
     <section className="mx-auto max-w-[1280px] px-6 pt-6">
       {/* Header row */}
@@ -45,7 +54,11 @@ export function SearchResults({ query, episode, results, onClear }: Props) {
               className="opacity-0 animate-fade-up"
               style={{ animationDelay: `${(i % 8) * 30}ms` }}
             >
-              <ProductCard product={p} />
+              <ProductCard
+                product={p}
+                isWishlisted={wishlistKeys.has(`${p.id}::${p.link}`)}
+                onToggleWishlist={onToggleWishlist}
+              />
             </div>
           ))}
         </div>

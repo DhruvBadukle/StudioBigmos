@@ -1,18 +1,29 @@
 import { useState } from "react";
+import { Heart } from "lucide-react";
 
 interface HeaderProps {
   searchQuery: string;
   onSearchChange: (q: string) => void;
   onNavigate: (target: string) => void;
+  wishlistCount: number;
+  onWishlistClick: () => void;
+  isWishlistActive: boolean;
 }
 
-export function Header({ searchQuery, onSearchChange, onNavigate }: HeaderProps) {
+export function Header({
+  searchQuery,
+  onSearchChange,
+  onNavigate,
+  wishlistCount,
+  onWishlistClick,
+  isWishlistActive,
+}: HeaderProps) {
   const [activeSection, setActiveSection] = useState("shop");
   const navigation = [
     { label: "Episodes", target: "episodes" },
     { label: "Shop", target: "shop" },
     { label: "Collections", target: "lookbook-items" },
-    { label: "Sale", target: "sale" },
+    { label: "Trending", target: "sale" },
   ];
 
   return (
@@ -55,26 +66,46 @@ export function Header({ searchQuery, onSearchChange, onNavigate }: HeaderProps)
           })}
         </nav>
 
-        <div className="ml-auto hidden w-[280px] items-center gap-2 rounded-full border border-line bg-white px-4 py-2 md:flex">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#888" strokeWidth="2" strokeLinecap="round">
-            <circle cx="11" cy="11" r="7" />
-            <path d="m20 20-3.5-3.5" />
-          </svg>
-          <input
-            value={searchQuery}
-            onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Search EP (e.g. 24)"
-            className="w-full border-0 bg-transparent text-sm outline-none placeholder:text-[#A0A0A0]"
-          />
-          {searchQuery && (
-            <button
-              onClick={() => onSearchChange("")}
-              className="text-muted hover:text-ink"
-              aria-label="Clear search"
-            >
-              ×
-            </button>
-          )}
+        <div className="ml-auto flex items-center gap-2">
+          <div className="hidden w-[280px] items-center gap-2 rounded-full border border-line bg-white px-4 py-2 md:flex">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#888" strokeWidth="2" strokeLinecap="round">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+            <input
+              value={searchQuery}
+              onChange={(e) => onSearchChange(e.target.value)}
+              placeholder="Search EP (e.g. 24)"
+              className="w-full border-0 bg-transparent text-sm outline-none placeholder:text-[#A0A0A0]"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => onSearchChange("")}
+                className="text-muted hover:text-ink"
+                aria-label="Clear search"
+              >
+                ×
+              </button>
+            )}
+          </div>
+          <button
+            type="button"
+            onClick={onWishlistClick}
+            aria-label={`Wishlist${wishlistCount ? `, ${wishlistCount} ${wishlistCount === 1 ? "product" : "products"}` : ""}`}
+            aria-current={isWishlistActive ? "page" : undefined}
+            className={`relative grid h-10 w-10 shrink-0 place-items-center rounded-full border transition-colors ${
+              isWishlistActive
+                ? "border-accent bg-accent text-white"
+                : "border-line bg-white text-ink hover:border-accent hover:text-accent"
+            }`}
+          >
+            <Heart size={19} strokeWidth={1.8} fill={isWishlistActive ? "currentColor" : "none"} />
+            {wishlistCount > 0 ? (
+              <span className="absolute -right-1 -top-1 grid min-h-5 min-w-5 place-items-center rounded-full bg-accent px-1 text-[10px] font-bold leading-none text-white ring-2 ring-bg">
+                {wishlistCount > 99 ? "99+" : wishlistCount}
+              </span>
+            ) : null}
+          </button>
         </div>
       </div>
 
