@@ -9,8 +9,14 @@ export function Hero() {
           Steal The Style
         </h1>
         <p className="mx-auto max-w-[600px] text-[16px] leading-relaxed text-muted md:text-[18px]">
-          Every piece from Avika&apos;s Studio latest episodes. Tap any product 
-          to shop directly on Amazon.
+          Trust issues?{" "}
+          <span className="inline-block rounded-full bg-[#f7eee9] px-2.5 py-0.5 font-semibold text-accent">
+            100%
+          </span>
+          . Tap any product to get redirected to{" "}
+          <span className="font-semibold text-ink underline decoration-accent/50 decoration-2 underline-offset-5">
+            Amazon
+          </span>
         </p>
       </div>
     </section>
