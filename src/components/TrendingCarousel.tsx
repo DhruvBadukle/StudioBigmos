@@ -100,10 +100,10 @@ export function TrendingCarousel({ items, wishlistKeys, onToggleWishlist }: Prop
                     onClick={() => onToggleWishlist(product)}
                     aria-label={`${wishlistKeys.has(`${product.id}::${product.link}`) ? "Remove from" : "Add to"} wishlist: ${product.title}`}
                     aria-pressed={wishlistKeys.has(`${product.id}::${product.link}`)}
-                    className={`absolute left-4 top-16 z-10 grid h-10 w-10 place-items-center rounded-full shadow-sm transition-colors ${
+                    className={`absolute right-4 top-4 z-10 grid h-10 w-10 place-items-center rounded-full border border-white/70 shadow-md transition-[background-color,color,transform] duration-200 active:scale-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${
                       wishlistKeys.has(`${product.id}::${product.link}`)
-                        ? "bg-accent text-white"
-                        : "bg-white/95 text-ink hover:text-accent"
+                        ? "border-accent bg-accent text-white"
+                        : "bg-[#f7eee9]/95 text-accent hover:bg-white"
                     }`}
                   >
                     <Heart
